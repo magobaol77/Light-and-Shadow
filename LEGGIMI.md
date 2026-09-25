@@ -1,13 +1,13 @@
-# Light & Shadow
+# Recycle Combo e Recycle Domino
 
-Apri index.html oppure Apri il gioco.cmd. L’app funziona offline.
+Apri index.html oppure Apri il gioco.cmd. Nel menu iniziale scegli una delle due versioni. Cataloghi, partita, annullamento e salvataggio sono separati. Il salvataggio Combo preesistente resta disponibile.
 
-Menu iniziale: cataloghi delle 56 tessere Luce e 30 Ombra, solitario e configurazione futura per 2/3/4 giocatori umani o automi.
+Combo conserva le tessere e gli effetti modificati il 22 settembre 2026.
 
-Il regno nasce da una tessera casuale piazzata al centro e cresce per adiacenza ortogonale, entro 4 righe e 4 colonne. La partita termina a 16 tessere. Luce: valore strettamente superiore alla bussola. Ombra: valore strettamente inferiore. La bussola arriva sul valore scelto senza ritorno circolare. Spendere 1 Batteria consente un passo a sinistra, senza consumare il turno, fino al minimo 1. Annulla azione ripristina anche le Batterie.
+Domino usa esclusivamente 1.1/TESSERE_LUCE_OMBRA_NUOVA_VERSIONE.xlsx: 56 Luce e 30 Ombra, con 83 Alberi, 36 Animali, 14 Batterie e 70 Immondizie. I valori attesi del foglio non sono punti reali di gioco. I dati sono incorporati in domino-cards.js e non si aggiornano automaticamente modificando il foglio.
 
-I confini di centro, bordo e angoli sono quelli dell’area attualmente occupata: i punteggi sono provvisori durante la crescita. Gli effetti istantanei usano i confini al piazzamento e non si riattivano. Queste convenzioni sono descritte anche nelle regole dell’app. Nessuna mossa legale e nessuna Batteria utilizzabile: l’app segnala il blocco, senza introdurre rifornimenti o passaggi non previsti.
+Setup comune: partenza Luce casuale, 2 Batterie più quelle della tessera iniziale, due display da quattro tessere, bussola al valore iniziale. Luce richiede un valore superiore, Ombra inferiore. Una Batteria consente un passo a sinistra senza consumare il turno. Il regno cresce per adiacenza ortogonale entro 4 righe e 4 colonne e termina a 16 tessere.
 
-I salvataggi della nuova versione usano una chiave separata; le partite della vecchia griglia fissa non vengono caricate né cancellate. La configurazione multigiocatore resta conservata.
+Domino: ogni Animale dà 1 PV. Ogni area connessa di un bioma dà numero di tessere × Alberi contenuti. Anche le tessere Ombra ampliano il bioma corrispondente. Nero è neutro. Le icone Batteria danno risorse subito, senza punti diretti.
 
-Dati: TILES_RIBILANCIATE_INTENZIONALITA.xlsx, incorporati in cards.js. Il foglio non aggiorna automaticamente l’app. Verifiche del motore: node test.cjs.
+Il riepilogo mostra anche la quantità di Immondizie nel cumulo connesso più grande, nella riga più sporca e nella colonna più sporca. Nel solitario il totale esclude confronti con avversari. Il multigiocatore e gli automi restano da implementare, come nella versione Combo. Il motore espone il confronto fra griglie: maggioranza Animali +2, e per ciascuna classifica Immondizie -5/-2. Parità e applicazione in solitario restano da confermare con l’autore prima del multigiocatore.

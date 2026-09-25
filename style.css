@@ -19,3 +19,9 @@
 .tile.shadow[data-biome="Bosco"]{background:#365c3c;color:#f0f8e9;border-color:#6f9770}
 .tile.shadow[data-biome="Prateria"]{background:#695b2f;color:#fff6d8;border-color:#a18b4c}
 #board .number{display:none}#board .tile-head{width:100%}#board .icons{width:100%;gap:0 2px}
+/* Domino biomes and score breakdown. */
+.tile[data-biome="Lago"]{background:#b9dff2;color:#173847;border-color:#79b9d8}.tile.shadow[data-biome="Lago"]{background:#28536c;color:#eff8ff;border-color:#548ca8}
+.tile[data-biome="Palude"]{background:#c9d4b0;color:#303c28;border-color:#90a467}.tile.shadow[data-biome="Palude"]{background:#505d35;color:#f0f4df;border-color:#839460}
+.tile[data-biome="Rovine verdi"]{background:#c4d8cc;color:#253e33;border-color:#819c8a}.tile.shadow[data-biome="Rovine verdi"]{background:#3e5950;color:#edf6ef;border-color:#749483}
+.tile[data-biome="Nero"]{background:#20252a;color:#f0f2f4;border-color:#606a74}
+#domino-score{margin-top:24px;padding:20px;border-top:1px solid #476155}#domino-score h2{font:24px Georgia,serif}#domino-breakdown{display:flex;flex-wrap:wrap;gap:20px}#domino-breakdown div{font-size:13px;color:#becdc2}#domino-breakdown strong{font-size:22px;color:#e9cd90}#domino-areas{line-height:1.8;color:#c8d7cc}
